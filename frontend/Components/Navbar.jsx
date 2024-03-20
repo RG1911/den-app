@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav style={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <ul style={{ display: 'flex', listStyle: 'none' }}>
                 <li style={{ marginRight: '10px' }}>
-                    <Link to="/login" style={{ color: 'white' }}>Login</Link>
+                    <Link to="/login" style={{ color: 'black' }}>Login</Link>
                 </li>
                 <li style={{ marginRight: '10px' }}>
                     <Link to="/profile" style={{ color: 'white' }}>Profile</Link>
