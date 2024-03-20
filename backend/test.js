@@ -3,7 +3,7 @@ import axios from 'axios';
 const app = express();
 const port = 3000;
 
-const accessToken = 'BQDOUIAiDPIHdwYiara9CeCT2_wXZ4K9wwZJrxhyKyAOH2dNvPlENz303g4rnwo8xrYFytMwmrPOGHdDGJC5ER7ypztocF2Vj-3oQAJ5AT9TZkxTfr8'; // Replace with your actual access token
+const accessToken = 'BQDHCbZwgT-FmV2SoXtlZGNiBaXkkz_-lEQJjm9gLXghiRQdvb7wQwIThOCb9MphKOmdWHvw5ETos0EmtLLnLLnmylnxxs1ZzE9PeCdVT8Dknwq5MoA'; // Replace with your actual access token
 const albumId = '4UVERYsIzs6xbDYO8srlqd'; // Replace with the actual album ID
 
 app.get('/album', (req, res) => {
@@ -20,7 +20,8 @@ app.get('/album', (req, res) => {
         name: albumData.name,
         artists: albumData.artists.map(artist => artist.name),
         release_date: albumData.release_date,
-        tracks: albumData.tracks.items.map(track => track.name)
+        tracks: albumData.tracks.items.map(track => track.name),
+        cover_art: albumData.images[0].url // Add this line
       };
       res.send(formattedData);
     })
