@@ -45,3 +45,29 @@
   width: 100px; 
   height: auto; 
 }
+
+.album-details {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-right: 20px;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.search-bar-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.search-button {
+  width: 66px;  
+  height: 32px; 
+  font-size: 10px; 
+  background-color: #312237;
+}

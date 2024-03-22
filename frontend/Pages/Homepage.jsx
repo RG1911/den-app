@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import Navbar from '../Components/Navbar';
+import SearchBar from '../Components/SearchBar';
 
 function Homepage() {
     const [album, setAlbum] = useState(null);
@@ -15,13 +16,16 @@ function Homepage() {
     return (
         <div>
             <Navbar />
+            <div className="search-bar-container">
+                <SearchBar />
+            </div>
             <h1>DEN</h1>
             <p>A social networking website for music lovers. </p>
             {album && (
-                <div>
+                <div> 
                     <img src={album.cover_art} alt={album.name} className="album-cover" />
-                    <p>{album.name}</p>
-                    <p>{album.artists}</p>
+                    <p className="album-details">{album.name}</p>
+                    <p className="album-details" style={{ marginTop: '5px' }}>{album.artists}</p>
                 </div>
             )}
         </div>
