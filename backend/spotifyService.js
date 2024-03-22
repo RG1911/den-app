@@ -1,5 +1,6 @@
 import axios from 'axios';
 import qs from 'qs';
+const cors = require('cors');
 
 const clientId = '67c2fdb01aa44023ac131087069162f0';
 const clientSecret = '394c8b5e1cc243aea3f1019b013ff2a7';

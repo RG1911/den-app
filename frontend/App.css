@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.album-cover {
+  width: 100px; 
+  height: auto; 
+}

@@ -1,9 +1,12 @@
 import express from 'express';
 import axios from 'axios';
-const app = express();
+import cors from 'cors';
 const port = 3000;
+const app = express();
+app.use(cors());
 
-const accessToken = 'BQDHCbZwgT-FmV2SoXtlZGNiBaXkkz_-lEQJjm9gLXghiRQdvb7wQwIThOCb9MphKOmdWHvw5ETos0EmtLLnLLnmylnxxs1ZzE9PeCdVT8Dknwq5MoA'; // Replace with your actual access token
+
+const accessToken = 'BQDxB5GGRy5e1kuFvaLhQbieaHZ-JiLlF4hrk0F_DyTcSVCmAZC9biQP9HorIN5g5UPVRupNJRotZpt0ndqQWWmG-QOtCOHK05WeLyScFV-PSwswhZs'; // Replace with your actual access token
 const albumId = '4UVERYsIzs6xbDYO8srlqd'; // Replace with the actual album ID
 
 app.get('/album', (req, res) => {
