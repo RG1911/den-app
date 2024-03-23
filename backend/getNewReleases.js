@@ -2,11 +2,11 @@ import express from 'express';
 import axios from 'axios';
 import cors from 'cors';
 
-const port = 3000;
+const port = 3001;
 const app = express();
 app.use(cors());
 
-const accessToken = 'BQABxX-jb8_Jcl9vBelocQSfr05l0xuMBUtd_Gh0KynDWZz22kD9IAJbwQMBrNt0aUPCuTlxrHyxUS79GafMEnoEOMfPnZK54w1qGWHnbVWFIEiyb1E'; // Replace with your actual access token
+const accessToken = 'BQDi3UNYXRAlvRzTUVySjxMbNgvg2IWrILFOjHsLQ5j6ZdKzbs2cb_3AmebwmXN_wjCqxsDB82rDlp5_9Z60VQ4VeIg1zmrK47LIj4eRm1ILdjOQU-c';
 
 app.get('/new-releases', (req, res) => {
     axios({
