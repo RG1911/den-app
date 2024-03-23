@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 
-const accessToken = 'BQCOizbCztVT_HXKuxYRBUJMt2D4rYaJ7ccSYVYtJcF_Cts9aBd93ovDX2FGRbhXCVNP1N3xlGmpoLOj66FxcfJ7mNs7vtn8S7NygJ9O0pO1CLeojrQ'; // Replace with your actual access token
+const accessToken = 'BQABxX-jb8_Jcl9vBelocQSfr05l0xuMBUtd_Gh0KynDWZz22kD9IAJbwQMBrNt0aUPCuTlxrHyxUS79GafMEnoEOMfPnZK54w1qGWHnbVWFIEiyb1E'; // Replace with your actual access token
 const albumId = '4UVERYsIzs6xbDYO8srlqd'; // Replace with the actual album ID
 
 app.get('/album', (req, res) => {

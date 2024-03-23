@@ -5,7 +5,7 @@ function Browse() {
     const [newReleases, setNewReleases] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/new-releases')
+        fetch('http://localhost:3001/new-releases')
             .then(response => response.json())
             .then(data => setNewReleases(data))
             .catch(error => console.error('Error:', error));
